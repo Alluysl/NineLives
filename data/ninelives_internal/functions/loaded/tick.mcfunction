@@ -13,6 +13,8 @@ execute as @a unless score @s ninelives.protection_flags_generation_id matches -
 
 execute if score #loopingTick ninelives.globals matches 1 run function ninelives_internal:loaded/protect/cats/tamed/apply_flagged
 
+execute if score #loopingTick ninelives.globals matches 1..1 run tag @e[type=minecraft:armor_stand] remove ninelives_internal_current_armor_template
+
 scoreboard players add #loopingTick ninelives.globals 1
 execute unless score #loopingTick ninelives.globals matches 0..19 run scoreboard players set #loopingTick ninelives.globals 0
 

@@ -1,4 +1,4 @@
-# ![](images/pack_026p.png) Nine Lives datapack v0.1
+# ![](images/pack_026p.png) Nine Lives datapack v0.2
 
 A datapack for protecting tamed cats from harm in toggleable ways,
 with some abstractions from the entity type
@@ -8,17 +8,24 @@ Tested on version 1.20.1 with the BCG modpack (shouldn't be required)
 
 ## Available options
 
-Potion effects
+### Potion effects
+
 - Regeneration I
 - Water Breathing
 - Fire Resistance
 - Resistance I
 - Highest possible level of resistance
 
-Planned
-- Armor (set parameterable from an armor stand)
+### Armor
 
-Considered
+Just set the flag then give the proper tag to a *single* armor stand
+and it will determine the armor to grant in real time
+
+Chat messages will guide you as to which tag(s) to give it
+and warn you if no armor stand – or too many – can be found!
+
+### Considered
+
 - Totems of Undying (count parameterable within reasonable bounds)
 - Ability (and requirement) to physically give the totems or armor
 
