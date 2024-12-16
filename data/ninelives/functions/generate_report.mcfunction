@@ -1,6 +1,6 @@
 tellraw @s [{"text": "[", "color": "gray"}, {"text": "Nine Lives parameters", "color": "light_purple", "bold": true}, "]"]
 
-tellraw @s "Cats"
+tellraw @s "Tamed cats"
 scoreboard players operation #currentProtectionFlags ninelives.globals = $tamedCatProtectionFlags ninelives.params
 function ninelives_internal:loaded/protection_flags/report_current
 
