@@ -1,9 +1,5 @@
 function ninelives_internal:loaded/protection_flags/process_current
 
-# TODO display life count params
-execute if score #doTotemProtection ninelives.globals matches 1 run tellraw @s [{"text": "    ✔ ", "color": "green"}, {"text": "Totems (WIP)", "color": "white"}]
-execute unless score #doTotemProtection ninelives.globals matches 1 run tellraw @s [{"text": "    ❌ ", "color": "red"}, {"text": "Totems (WIP)", "color": "white"}]
-
 execute if score #doArmorProtection ninelives.globals matches 1 run tellraw @s [{"text": "    ✔ ", "color": "green"}, {"text": "Armor", "color": "white"}]
 execute unless score #doArmorProtection ninelives.globals matches 1 run tellraw @s [{"text": "    ❌ ", "color": "red"}, {"text": "Armor", "color": "white"}]
 
