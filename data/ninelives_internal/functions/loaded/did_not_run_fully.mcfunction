@@ -1,0 +1,3 @@
+scoreboard players add $warningNineLivesCouldNotRunFullyForTicks ninelives.globals 1
+
+execute if score $warningNineLivesCouldNotRunFullyForTicks ninelives.globals matches 1 run tellraw @a [{"text": "", "color": "dark_gray"}, {"text": "[", "color": "dark_red"}, {"text": "Warning", "color": "red"}, {"text": "] ", "color": "dark_red"}, {"text": "NineLives could not run fully for at least one tick ", "bold": true, "color": "red"}, "(", {"text": "Click here to see how many", "underlined": true, "clickEvent": {"action": "run_command", "value": "/trigger ninelives.check_if_did_not_run_fully_trigger"}}, ")"]
