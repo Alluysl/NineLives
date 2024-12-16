@@ -11,7 +11,7 @@ scoreboard players enable @a ninelives.generate_report_trigger
 
 execute as @a unless score @s ninelives.protection_flags_generation_id matches -1 unless score @s ninelives.protection_flags_generation_id = #current ninelives.protection_flags_generation_id run function ninelives_internal:loaded/protection_flags_generation_ids_do_not_match
 
-execute if score #loopingTick ninelives.globals matches 1 run function ninelives_internal:loaded/protect/tamed_cats
+execute if score #loopingTick ninelives.globals matches 1 run function ninelives_internal:loaded/protect/cats/tamed/apply_flagged
 
 scoreboard players add #loopingTick ninelives.globals 1
 execute unless score #loopingTick ninelives.globals matches 0..19 run scoreboard players set #loopingTick ninelives.globals 0

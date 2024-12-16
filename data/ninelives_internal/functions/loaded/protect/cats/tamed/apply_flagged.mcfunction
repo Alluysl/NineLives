@@ -2,6 +2,7 @@ scoreboard players operation #currentProtectionFlags ninelives.globals = $tamedC
 function ninelives_internal:loaded/protection_flags/process_current
 
 execute if score #doTotemProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run function ninelives_internal:loaded/totem/tick_one
+
 execute if score #doArmorProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run function ninelives_internal:loaded/armor/tick_one
 
 # Effects are refreshed for 30s to account for possible downtimes during reloads
