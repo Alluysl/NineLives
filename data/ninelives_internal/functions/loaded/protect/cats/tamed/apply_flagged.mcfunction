@@ -3,7 +3,7 @@ function ninelives_internal:loaded/protection_flags/process_current
 
 execute if score #doTotemProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run function ninelives_internal:loaded/totem/tick_one
 
-execute if score #doArmorProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run function ninelives_internal:loaded/armor/tick_one
+execute if score #doArmorProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run function ninelives_internal:loaded/armor/apply_one
 
 # Effects are refreshed for 30s to account for possible downtimes during reloads
 execute if score #doResistanceProtection ninelives.globals matches 1 as @e[type=minecraft:cat] if data entity @s Owner run effect give @s minecraft:resistance 30 0 true
