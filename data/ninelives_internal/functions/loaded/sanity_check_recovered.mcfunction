@@ -1,3 +1,4 @@
+# -2: see bump_generation_id_after_sanity_check_recovery sibling function
 # -1: notified already, function won't be called before next sanity check failure
 #  0: no sanity check failed for the past two loads, function never called
 #  1: sanity check successful right after last load, had failed before it
