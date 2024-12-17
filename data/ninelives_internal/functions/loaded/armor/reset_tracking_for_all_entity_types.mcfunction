@@ -1,0 +1,1 @@
+function ninelives_internal:loaded/protect/cats/tamed/reset_armor_tracking

@@ -16,4 +16,4 @@ scoreboard players set #2 ninelives.globals 2
 scoreboard players set #ranFullyLastTick ninelives.globals 1
 scoreboard players set #loopingTick ninelives.globals 0
 
-function ninelives_internal:loaded/protect/cats/tamed/reset_armor_tracking
+function ninelives_internal:loaded/armor/reset_tracking_for_all_entity_types

@@ -16,7 +16,7 @@ execute as @a unless score @s ninelives.protection_flags_generation_id matches -
 
 # ... but we don't want to warn twice if the sanity breach didn't destroy parameters and a change that happened in the meantime is detected below,
 #     so we have to bump the generation ID here (in a dedicated function to set the recovery state to a different value to not re-enter)
-execute if score #sanityCheckRecoveryState ninelives.globals matches -1 run function ninelives_internal:loaded/bump_generation_id_after_sanity_check_recovery
+execute if score #sanityCheckRecoveryState ninelives.globals matches -1 run function ninelives_internal:loaded/refresh_trackings_after_sanity_check_recovery
 
 execute if score #loopingTick ninelives.globals matches 1 run function ninelives_internal:loaded/protect/cats/tamed/apply_flagged
 
