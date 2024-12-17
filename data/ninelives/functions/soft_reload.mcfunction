@@ -1,0 +1,1 @@
+function ninelives_internal:load
