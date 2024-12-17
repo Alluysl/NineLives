@@ -1,4 +1,4 @@
-# ![](images/pack_026p.png) Nine Lives datapack v0.2
+# ![](images/pack_026p.png) Nine Lives datapack v0.3
 
 A datapack for protecting tamed cats from harm in toggleable ways,
 with some abstractions from the entity type
@@ -44,6 +44,7 @@ Considered features
 
 Feature | Command (`function ninelives:`) | Requires command knowledge
 -|-|:-:
+Toggle protection policies | `edit_flags/*` | ❎ No
 Count entities\* | `count_entities_of_interest` | ❎ No
 Reset incomplete run detection | `reset_could_not_run_fully_warning` | ❎ No
 
