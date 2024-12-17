@@ -1,6 +1,7 @@
 # Callers:
 # - (internal) loaded/protection_flags/report_current
 # - (internal) loaded/protect/*
+# This is basically a bitwise read, which must sync with its rebuilding counterpart
 
 # if (currentProtectionFlags & 1)
 scoreboard players operation #temp ninelives.globals = #currentProtectionFlags ninelives.globals
