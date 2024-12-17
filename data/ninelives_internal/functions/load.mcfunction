@@ -5,6 +5,7 @@ scoreboard objectives add ninelives.protection_flags_generation_id dummy
 scoreboard objectives add ninelives.generate_report_trigger trigger
 scoreboard objectives add ninelives.check_if_did_not_run_fully_trigger trigger
 
+execute store result score #sanityCheckRecoveryState ninelives.globals if score $errorSanityCheckFailed ninelives.globals matches 1
 scoreboard players reset $errorSanityCheckFailed ninelives.globals
 
 scoreboard players set #sentinel ninelives.params 1
