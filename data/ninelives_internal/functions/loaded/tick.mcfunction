@@ -12,7 +12,7 @@ execute as @a[scores={ninelives.generate_report_trigger=1..2147483646}] run func
 execute as @a[scores={ninelives.generate_report_trigger=2147483647}] run function ninelives:toggle_my_protection_flag_change_warnings
 scoreboard players enable @a ninelives.generate_report_trigger
 
-execute as @a unless score @s ninelives.protection_flags_generation_id matches -1 unless score @s ninelives.protection_flags_generation_id = #current ninelives.protection_flags_generation_id run function ninelives_internal:loaded/protection_flags_generation_ids_do_not_match
+execute as @a unless score @s ninelives.protection_flags_generation_id matches -1 unless score @s ninelives.protection_flags_generation_id = #current ninelives.protection_flags_generation_id run function ninelives_internal:loaded/protection_flags/generation_id_mismatch_one
 
 # ... but we don't want to warn twice if the sanity breach didn't destroy parameters and a change that happened in the meantime is detected below,
 #     so we have to bump the generation ID here (in a dedicated function to set the recovery state to a different value to not re-enter)
