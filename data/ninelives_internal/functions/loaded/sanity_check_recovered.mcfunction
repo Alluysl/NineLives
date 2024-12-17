@@ -5,3 +5,4 @@
 execute if score #sanityCheckRecoveryState ninelives.globals matches 1 run tellraw @a [{"text": "", "color": "gray"}, {"text": "NineLives", "color": "dark_purple"}, " sanity check passed after reload ", {"text": "✔", "color": "green"}, "\nExecution resumed"]
 execute if score #sanityCheckRecoveryState ninelives.globals matches 2 run tellraw @a [{"text": "", "color": "gray"}, {"text": "NineLives", "color": "dark_purple"}, " sanity check passed ", {"text": "✔", "color": "green"}, " Great job 👍\n Execution resumed"]
 scoreboard players set #sanityCheckRecoveryState ninelives.globals -1
+scoreboard players reset $errorSanityCheckFailed ninelives.globals
