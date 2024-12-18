@@ -1,12 +1,13 @@
-# If functions couldn't run fully (e.g. another pack hit the function call limit), warn in chat
-execute unless score #ranFullyLastTick ninelives.globals matches 1 run function ninelives_internal:loaded/did_not_run_fully
+# If functions couldn't run fully (e.g. another pack hit the function call limit), warn in chat (wait for players to be online if the server is starting)
+execute unless score #ranFullyLastTick ninelives.globals matches 1 run scoreboard players add $warningNineLivesCouldNotRunFullyForTicks ninelives.globals 1
+execute if score $warningNineLivesCouldNotRunFullyForTicks ninelives.globals matches 1.. run function ninelives_internal:loaded/did_not_run_fully
 scoreboard players set #ranFullyLastTick ninelives.globals 0
 
 execute as @a[scores={ninelives.check_if_did_not_run_fully_trigger=1..}] run function ninelives:check_if_did_not_run_fully
 scoreboard players enable @a ninelives.check_if_did_not_run_fully_trigger
 
 # We want to give the OK right before generating any ill-timed reports or warning of verified past flag changes...
-execute if score #sanityCheckRecoveryState ninelives.globals matches 1.. run function ninelives_internal:loaded/sanity_check_recovered
+execute if entity @a if score #sanityCheckRecoveryState ninelives.globals matches 1.. run function ninelives_internal:loaded/sanity_check_recovered
 
 execute as @a[scores={ninelives.generate_report_trigger=1..2147483646}] run function ninelives:generate_report
 execute as @a[scores={ninelives.generate_report_trigger=2147483647}] run function ninelives:toggle_my_protection_flag_change_warnings

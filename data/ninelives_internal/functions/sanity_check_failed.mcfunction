@@ -3,4 +3,5 @@ tellraw @a [{"text": "", "color": "gray"}, {"text": "[", "color": "dark_red"}, {
 # See (loaded) sanity_check_recovered
 scoreboard players set #sanityCheckRecoveryState ninelives.globals 2
 
-scoreboard players set $errorSanityCheckFailed ninelives.globals 1
+# If any player has seen the message then we don't need to execute this function again
+execute if entity @a run scoreboard players set $errorSanityCheckFailed ninelives.globals 1

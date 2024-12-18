@@ -1,1 +1,2 @@
 scoreboard players reset $warningNineLivesCouldNotRunFullyForTicks ninelives.globals
+scoreboard players reset #warningNineLivesCouldNotRunFullySeen ninelives.globals
