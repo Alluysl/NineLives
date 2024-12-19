@@ -33,7 +33,7 @@ and warn you if no armor stand – or too many – can be found!
 
 All accessed through clicks on specific chat messages
 or manually with `/trigger`
-- Get a report of the current protection policies 
+- Get a report of the current protection policies and armor sets
 (and toggle [warnings](#for-players) for when they change)
 - Check how many [incomplete runs](#technical) – if any – the pack detected
 
@@ -67,12 +67,13 @@ if you have no other datapack installed
 
 ### For players
 
-Warnings when the protection policies change
+Warnings when the protection policies – or armor sets – change
 - Still works if they were changed while they were away
 - Can be turned off (or back on) at their choosing
 
 ### Technical
 
-- Should – at the very worst – turn off if scoreboards are messed with
+- Detects if scoreboards or storage were broken and waits until a reload to run
 - Should recover from any damage on reload if not automatically
 - Detects incomplete runs if the remaining command count budget is very limited
+- Issues warning/error messages when an issue is detected, with steps to fix it
