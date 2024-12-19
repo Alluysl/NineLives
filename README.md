@@ -1,4 +1,4 @@
-# ![](images/pack_026p.png) NineLives datapack v0.4
+# ![](images/pack_026p.png) NineLives datapack v0.5
 
 A datapack for protecting tamed cats from harm in toggleable ways,
 with some abstractions from the entity type
