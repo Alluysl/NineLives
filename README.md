@@ -24,7 +24,7 @@ and it will determine the armor to grant in real time
 Chat messages will guide you as to which tag(s) to give it
 and warn you if no armor stand – or too many – can be found!
 
-### Considered
+## Considered future options
 
 - Totems of Undying (count parameterable within reasonable bounds)
 - Ability (and requirement) to physically give the totems or armor
