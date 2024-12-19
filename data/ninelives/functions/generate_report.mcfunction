@@ -1,4 +1,4 @@
-tellraw @s [{"text": "[", "color": "gray"}, {"text": "Nine Lives parameters", "color": "light_purple", "bold": true}, "]"]
+tellraw @s [{"text": "[", "color": "gray"}, {"text": "NineLives parameters", "color": "light_purple", "bold": true}, "]"]
 
 execute unless score #sane ninelives.globals matches 1 run tellraw @s {"text": "Pack data integrity not ensured, results may be false or fail to display", "color": "red"}
 

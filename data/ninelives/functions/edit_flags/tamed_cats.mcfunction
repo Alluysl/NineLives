@@ -1,4 +1,4 @@
-tellraw @s [{"text": "[", "color": "gray"}, {"text": "Nine Lives parameters", "color": "light_purple", "bold": true}, "]"]
+tellraw @s [{"text": "[", "color": "gray"}, {"text": "NineLives parameters", "color": "light_purple", "bold": true}, "]"]
 
 tellraw @s {"text": "    for: tamed cats", "color": "gray"}
 scoreboard players operation #currentProtectionFlags ninelives.globals = $tamedCatProtectionFlags ninelives.params
