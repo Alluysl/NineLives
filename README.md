@@ -37,6 +37,10 @@ or manually with `/trigger`
 (and toggle [warnings](#for-players) for when they change)
 - Check how many [incomplete runs](#technical) – if any – the pack detected
 
+Example
+:-:
+![NineLives reporting on armor and toggled flags](images/examples/report.png)
+
 Considered features
 - Built-in voting system (easy to abuse if too simple, sadly)
 
