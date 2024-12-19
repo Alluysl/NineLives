@@ -46,12 +46,22 @@ Feature | Command (`function ninelives:`) | Requires command knowledge
 -|-|:-:
 Toggle protection policies | `edit_flags/*` | ❎ No
 Count entities\* | `count_entities_of_interest` | ❎ No
-Reload the pack without reloading (possibly many!) files | `soft_reload` | ❎ No
+Reload the pack without `reload` | `soft_reload` | 🤏 A little\*\*
 Reset incomplete run detection | `reset_could_not_run_fully_warning` | ❎ No
 
 Other functions are simply an easier access to player "commands"
 
 \* for now, cats, with a second count for tamed ones
+
+\*\* In-depth explanation:
+the `reload` command processes files for all datapacks again,
+which can be long if others are installed,
+so to call this one's loading logic again
+(typically when suggested by a message),
+you may use `function ninelives:soft_reload`,
+which is equivalent to `function #minecraft:load`
+if you have no other datapack installed  
+`reload` is still necessary if you've made changes to the files
 
 ## Safeguards
 
